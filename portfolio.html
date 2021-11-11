@@ -289,7 +289,7 @@
             </ul>
           </address>
         </div>
-        <div>
+        <div class="join-us-container">
           <h3 class="footer-social-title">ПРИСОЕДИНЯЙТЕСЬ</h3>
           <ul class="team-social social-list list">
             <li class="social-item">
@@ -321,6 +321,28 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="subscribe-section">
+          <h3 class="footer-social-title">Подпишитесь на рассылку</h3>
+          <form name="signup-form" autocomplete="on" novalidate>
+            <div class="subscribe-form-container">
+              <label for="email" class="subscribe-form-label">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="subscribe-form-input"
+                  placeholder="E-mail"
+                />
+              </label>
+              <button type="submit" class="form-btn">
+                Подписаться
+                <svg class="form-btn-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>

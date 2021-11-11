@@ -405,7 +405,7 @@
             </ul>
           </address>
         </div>
-        <div>
+        <div class="join-us-container">
           <h3 class="footer-social-title">ПРИСОЕДИНЯЙТЕСЬ</h3>
           <ul class="team-social social-list list">
             <li class="social-item">
@@ -440,9 +440,29 @@
         </div>
         <div class="subscribe-section">
           <h3 class="footer-social-title">Подпишитесь на рассылку</h3>
+          <form name="signup-form" autocomplete="on" novalidate>
+            <div class="subscribe-form-container">
+              <label for="email" class="subscribe-form-label">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="subscribe-form-input"
+                  placeholder="E-mail"
+                />
+              </label>
+              <button type="submit" class="form-btn">
+                Подписаться
+                <svg class="form-btn-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
+    <!-- /* -------------------modal-------------------------- */ -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" data-modal-close class="modal-btn button">
@@ -450,6 +470,76 @@
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
+        <form action="#" class="modal-form">
+          <p class="modal-form-header">
+            Оставьте свои данные, мы вам перезвоним
+          </p>
+
+          <label for="" class="modal-form-field"
+            >Имя
+            <span class="form-input-wrap">
+              <input
+                type="text"
+                class="modal-form-input"
+                name="person-name"
+                minlength="3"
+                pattern="[a-zA-Zа-яёА-ЯЁ]+"
+                title="Допустимы только знаки кириллицы и латиницы"
+              />
+              <svg class="modal-form-input-icon">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </span>
+          </label>
+          <label for="" class="modal-form-field"
+            >Телефон
+            <span class="form-input-wrap">
+              <input
+                type="text"
+                class="modal-form-input"
+                name="person-tel"
+                minlength="12"
+                pattern="[0-9]{12}"
+                title="380123456789"
+              />
+              <svg class="modal-form-input-icon">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </span>
+          </label>
+          <label for="" class="modal-form-field"
+            >Почта
+            <span class="form-input-wrap">
+              <input
+                type="text"
+                class="modal-form-input"
+                name="person-mail"
+                required
+              />
+              <svg class="modal-form-input-icon">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+            </span>
+          </label>
+          <label for="" class="modal-form-field"
+            >Комментарий
+            <textarea
+              class="modal-form-message"
+              name="person-message"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+          <input
+            class="modal-check-box visually-hidden"
+            type="checkbox"
+            id="accept"
+          />
+          <label class="modal-form-checkbox-label" for="accept">
+            Соглашаюсь с рассылкой и принимаю
+            <a href="#" class="modal-form-link">Условия договора</a>
+          </label>
+          <button class="modal-form-button" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
