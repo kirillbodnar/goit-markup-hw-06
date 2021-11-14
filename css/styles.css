@@ -29,6 +29,11 @@ body {
   color: var(--main-text-color);
 }
 
+.button {
+  cursor: pointer;
+  display: block;
+}
+
 .list {
   padding: 0;
   margin: 0;
@@ -764,6 +769,7 @@ img {
 
   display: block;
   padding-left: 16px;
+  padding-right:
   color: white;
 }
 
@@ -797,6 +803,11 @@ img {
   border-radius: 4px;
   border-style: none;
 }
+
+.form-btn:hover,
+  .form-btn:focus {
+    background-color: #2196F3 ;
+  }
 
 .form-btn-icon {
   margin-left: 10px;
@@ -933,13 +944,11 @@ img {
 .form-input-wrap {
   display: block;
   position: relative;
-  margin-top: 4px;
 }
 
 .modal-form-message {
   width: 100%;
   height: 120px;
-  margin-top: 4px;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -962,6 +971,8 @@ img {
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms var(--transition);
+  display: block;
+  margin: 0 auto;
 }
 
 .modal-form-button:hover {
