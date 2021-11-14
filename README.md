@@ -1,3 +1,3 @@
-# Ссылка на сайт: https://kirillbodnar.github.io/goit-markup-hw-05
+# Ссылка на сайт: https://kirillbodnar.github.io/goit-markup-hw-06
 
 /
